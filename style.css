@@ -1,0 +1,128 @@
+body {
+    font-size: 14px;
+    font-family: "Montserrat";
+    background-color: #f2ebe3;
+}
+#container {
+    display: grid;
+    place-items: center;
+   
+}
+#image-desktop {
+    display: none;
+}
+#main-price {
+    font-family: "Fraunces";
+    padding-right: 20px;
+    color: #3c8067;
+    align-self: center;
+}
+#price {
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+#old-price {
+    position: right;
+    text-decoration: line-through;
+    align-self: center;
+}
+#image-container {
+   display: flex;
+    border-radius: 8px 8px 0 0;
+}
+.main-image {
+    max-width: 100%;
+    margin: 0;
+}
+#sub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 5px;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 400px;
+}
+#text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: #ffffff;
+    justify-content: center;
+}
+#gab {
+    margin: 0;
+    font-size: 30px;
+}
+button {
+    background-color: #3c8067;
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: aliceblue;
+    height: 60px;
+    border-radius: 12px;
+    font-weight: 700;
+    border: none;
+}
+button:hover {
+    background-color: #133d2e;
+    cursor: pointer;
+    transform: translateY(-0.1em);
+}
+button p {
+    font-size: 15px;
+    align-self: center;
+}
+.cart {
+    width: 18px;
+    align-self: center;
+    padding-right: 10px;
+}
+h1 {
+    font-family: "Fraunces"; 
+}
+#para {
+    line-height: 25px;
+    opacity: 0.6;
+}
+#perf {
+    letter-spacing: 5px;
+}
+#perf, #old-price {
+    opacity: 0.50;
+}
+
+@media (min-width: 600px) {
+    #container {
+        height: 100vh;
+    }
+    #image-mobile {
+        display: none;
+    }
+    #image-desktop {
+        display: block;
+    }
+    #sub-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 700px;
+    }
+    #text-container {
+        height: 88.5%;
+        flex-basis: 50%;
+        padding: 35px;
+    }
+    
+    #image-container {
+        width: 100%;
+        flex-basis: 50%;
+        height: 100%;
+    }
+    #main-price {
+        font-size: 36px;
+    }
+}
